@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recipe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container">
+      <a class="navbar-brand" href="#">Recipe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index">Recommendation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="addcart">Cart</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Recipe Cards -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/pizza.jpg') }}" class="card-img-top" alt="Recipe 1">
+          <div class="card-body">
+            <h5 class="card-title">Veg Pizza</h5>
+            <p class="card-text">Fire up your oven and get the toppings ready.</p>
+            <a href="{{ url_for('recipe_info') }}" class="btn btn-success">Get Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/recipe2.jpeg') }}" class="card-img-top" alt="Recipe 2">
+          <div class="card-body">
+            <h5 class="card-title">Chicken Curry</h5>
+            <p class="card-text">This is a delicious chicken, chickpea and coconut curry recipe is a fantastic way to put a smile on everyone's faces.</p>
+            <a href="{{ url_for('recipe_info') }}" class="btn btn-success">Get Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/recipe3.jpeg') }}" class="card-img-top" alt="Recipe 3">
+          <div class="card-body">
+            <h5 class="card-title">Chinese Rice Porridge</h5>
+            <p class="card-text">"An economical dish that is easy to make—I used water and it was good—exactly what you expect from a plain porridge that you'll add flavor to later. </p>
+            <a href="{{ url_for('recipe_info') }}" class="btn btn-success">Get Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/cauliflower.jpg') }}" class="card-img-top" alt="Recipe 1">
+          <div class="card-body">
+            <h5 class="card-title">Tandoori Cauliflower</h5>
+            <p class="card-text">These tandoori cauliflower make for a filling and flavour-packed vegetarian dish. </p>
+            <a href="{{ url_for('recipe_info') }}" class="btn btn-success">Get Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/naan.jpg') }}" class="card-img-top" alt="Recipe 1">
+          <div class="card-body">
+            <h5 class="card-title">Grilled Naan</h5>
+            <p class="card-text">are wonderful cooked on the barbecue, on a chargrill or under the grill. They're easy to make, and are soft.</p>
+            <a href="{{ url_for('recipe_info') }}" class="btn btn-success">Get Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/paneer.jpg') }}" class="card-img-top" alt="Recipe 1">
+          <div class="card-body">
+            <h5 class="card-title">Warm Paneer and Lentil Salad</h5>
+            <p class="card-text">This is a description of a Enjoy the spicy flavour of this warm vegetarian salad.
+            </p>
+            <a href="{{ url_for('recipe_info') }}" class="btn btn-success">Get Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more card columns as needed -->
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendation</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<style>
+    .text-white{
+        color:black
+    }
+</style>
+<body style="background-color:white">
+
+    <nav class="navbar" style="background-color:#ffc107">
+        <a class="navbar-brand">Recommendation</a>
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="recipe">Recipe</a></li>
+            <li><a href="addcart">Cart</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- <div class="container"> -->
+        <div class="row">
+
+            <div class="col-md-12">
+                <h1 class="text-white" style="font-size:100px"></h1>
+            </div>
+            <div class="col-md-12">
+                <h1 class="text-white" style="font-size:35px">Recommendation Based On Browser History</h1>
+            </div>
+            {% for i in range(PRODUCT_NAME|length) %}
+                <div class="col-md-2" style="margin-top:50px">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="{{ image1[i] }}" style="width: 150px; height: 150px;">
+                            <h3 class="text-white">{{ PRODUCT_NAME[i] }}</h3>
+                            
+                            <h5 class="text-white">Price - {{ PRICE[i] }}</h5>
+                            <h5 class="text-white">Quantity - {{ WEIGHT[i] }}</h5>
+                            
+                            <h4><button type="button" class="btn btn-success">Add to Cart</button></h4>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+              <div class="col-md-12">
+                <h1 class="text-white" style="font-size:35px">User Like You also bought</h1>
+            </div>
+
+              {% if data %}
+
+             {% for i in data %}
+                <div class="col-md-2" style="margin-top:50px">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="{{i[2]}}" style="width: 150px; height: 150px;">
+                            <h3 class="text-white">{{i[0]}}</h3>
+                            <h5 class="text-white">Price - {{i[1]}}</h5>
+                            <h5 class="text-white">Quantity - {{i[3]}}</h5>
+                            <h4><button type="button" class="btn btn-success">Add to Cart</button></h4>
+                        </div>
+                    </div>
+                </div>
+             {% endfor %}
+
+            {% endif %}
+            
+            <div class="col-md-12">
+                <h1 class="text-white" style="font-size:35px">Top 50 Products</h1>
+            </div>
+
+            {% for i in range(book_name|length) %}
+                <div class="col-md-2" style="margin-top:50px">
+                    <div class="card">
+                        
+                        <div class="card-body">
+                            <img class="card-img-top" src="{{ image[i] }}" style="width: 150px; height: 150px;">
+                            <h3 class="text-white">{{ book_name[i] }}</h3>
+                            <h5 class="text-white">{{ Categories[i] }}</h5>
+                            <h5 class="text-white">Price - {{ votes[i] }}</h5>
+                            <h5 class="text-white">Quantity - {{ rating[i] }}</h5>
+                            <!-- <button type="button">Add to Cart</button> -->
+                            <h4><button type="button" class="btn btn-success">Add to Cart</button></h4>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+
+        </div>
+    <!-- </div> -->
+
+</body>
+</html>
