@@ -1,9 +1,9 @@
 <!--Banner-->
 
 # FlipMart - A Personalized Product Recommender by Binary Coders</b>
-Flipsmart is an attempt to bring the features to life of the robust and popular E-Commerce application - FlipMart. This project was built as a part of the Flipkart GRID 5.0 where we build our project on a Problem Statement: Personalized Product Recommendations
+FlipMart aims to embody the functionalities of the well-established and widely used e-commerce platform - FlipMart. This initiative was developed in conjunction with the Flipkart GRID 5.0 program, during which our project centered around addressing the challenge of crafting Personalized Product Recommendations.
 
-<b> What does this project solves: </b><br/>
+<b> What does this project solve? </b><br/>
 #### 1. Recommending items based on Past Purchase History
 - There is a repetition that happens while buying grocery items and a user's past purchase history is extremely crucial for offering good recommendations. 
 - For recommendations on the past order, there is a need for an association between the current item and the previously bought items. The Apriori Algorithm of ARL is used to find the association among products.
