@@ -1,6 +1,6 @@
 <!--Banner-->
 
-# FlipMart - A Smart Shopping Basket by Binary Coders</b>
+# FlipMart - A Personalized Product Recommender by Binary Coders</b>
 Flipsmart is an attempt to bring the features to life of the robust and popular E-Commerce application - FlipMart. This project was built as a part of the Flipkart GRID 5.0 where we build our project on a Problem Statement: Personalized Product Recommendations
 
 <b> What does this project solves: </b><br/>
