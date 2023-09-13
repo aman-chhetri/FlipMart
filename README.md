@@ -7,12 +7,12 @@ FlipMart aims to embody the functionalities of the well-established and widely u
 ## <b> USE-CASE 1 : Personalized Product Recommendations📍 </b><br/>
 
 #### 1. Recommending items based on Past Purchase History 🛒
-- There is a repetition that happens while buying grocery items and a user's past purchase history is extremely crucial for offering good recommendations. 
-- For recommendations on the past order, there is a need for an association between the current item and the previously bought items. The Apriori Algorithm of ARL is used to find the association among products.
-
+- Repetition often occurs when shopping for groceries, and a user's historical purchase data plays a pivotal role in delivering valuable suggestions.  
+- To generate recommendations based on a user's previous orders, establishing associations between the current item and previously purchased ones is essential.
+- The Apriori Algorithm from Association Rule Learning (ARL) is employed to identify these connections among products.
 #### 2. Recommending items based on Ratings from Similar Users ⭐
-- People from the same region have similar staple food and dietary habits hence having similar product needs became the basis for us taking up this use case.
-- To find the required similarities between the users, the Memory-based Collaborative filtering technique was used by implementing the nearest neighbors algorithm thereby identifying similar users with the common trends using the user rating data.
+- People residing in the same region often share similar dietary preferences and staple food choices, which is why identifying similar product preferences among them formed the foundation for our exploration of this use case.
+- To discover the relevant similarities among users, we employed the Memory-based Collaborative Filtering technique by implementing the nearest neighbors algorithm. This allowed us to identify users who exhibit common trends in their product preferences by analyzing their user rating data.
 
 ## <b> USE-CASE 2 : Recipe Integration and Cart Management 🛒 </b><br/>
 - Exploring Recipes and Adding Ingredients
