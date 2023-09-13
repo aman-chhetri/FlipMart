@@ -1,4 +1,5 @@
 <!--Banner-->
+![Banner](./screenshots/banner.jpg)
 
 # FlipMart ✨ - A Personalized Product Recommender by Binary Coders </b>
 FlipMart aims to embody the functionalities of the well-established and widely used e-commerce platform - FlipMart. This initiative was developed in conjunction with the Flipkart GRID 5.0 program, during which our project centered around addressing the challenge of crafting Personalized Product Recommendations.
