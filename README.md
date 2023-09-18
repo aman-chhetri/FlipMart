@@ -64,4 +64,4 @@ That's it! Your application is good to go.
 
 ## Support and Contact 📩
 
-Project made by: [Aman Kshetri](https://www.linkedin.com/in/amankshetri/) , [Aman Bhandari](https://www.linkedin.com/in/amankshetri/) and [Raj Sah Rauniyar](https://www.linkedin.com/in/rajsahrauniyar/)  - feel free to contact us! 🙂
+Project made by: [Aman Kshetri](https://www.linkedin.com/in/amankshetri/) , [Aman Bhandari](https://www.linkedin.com/in/amankshetri/) and [Raj Sah Rauniyar](https://www.linkedin.com/in/raj-sah-rauniyar/)  - feel free to contact us! 🙂
